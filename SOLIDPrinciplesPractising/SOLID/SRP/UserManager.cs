@@ -1,4 +1,4 @@
-﻿namespace SOLIDPrinciplesPractising.SOLID.SRP.Solution
+﻿namespace SOLIDPrinciplesPractising.SOLID.SRP
 {
     public class UserManager
     {
@@ -18,10 +18,10 @@
 
             _databaseService.SaveToDatabase(username, password);
         }
-        
+
         private bool ValidateUser(string username, string password)
         {
-            var userIsOkay = !String.IsNullOrEmpty(username) && !String.IsNullOrEmpty(password);
+            var userIsOkay = !string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password);
 
             return userIsOkay;
         }
